@@ -39,31 +39,31 @@
 
     <center>
       <div>
-      <form class="row row-cols-4 g-1 mt-5 justify-content-center" id="form1">
-        <div class="row-cols-4 justify-content-center h-50" style="width: 212px; height: 500px;">
-          <textarea class="fw-bold rounded-2 px-2 align-text-bottom input-group-text " type="text" name="answer" id="answer"></textarea>
+      <form class="row row-cols-4 g-1 mt-5 pt-5 justify-content-center" id="form1">
+        <div class="row-cols-4 justify-content-end h-50">
+          <textarea class="fw-bold rounded-2 px-2 text-end align-text-bottom input-group-text" style="width: 212px; height: 120px"; type="text" name="answer" id="answer"></textarea>
         </div>
         
         <div class="col-12">
           <input class="btn" type="button" value="1" onclick="form1.answer.value += '1' ">
           <input class="btn" type="button" value="2" onclick="form1.answer.value += '2' ">
           <input class="btn" type="button" value="3" onclick="form1.answer.value += '3' ">
-          <input class="btn" type="button" value="+" onclick="form1.answer.value += '+' + '\n'">
+          <input class="btn" type="button" value="+" onclick="form1.answer.value += '\n' + '+' + '\n'">
         </div>
         <div class="col-12">
           <input class="btn" type="button" value="4" onclick="form1.answer.value += '4' ">
           <input class="btn" type="button" value="5" onclick="form1.answer.value += '5' ">
           <input class="btn" type="button" value="6" onclick="form1.answer.value += '6' ">
-          <input class="btn" type="button" value="-" onclick="form1.answer.value += '-' ">
+          <input class="btn" type="button" value="-" onclick="form1.answer.value += '\n' + '-' + '\n' ">
         </div>
         <div class="col-12">
           <input class="btn" type="button" value="7" onclick="form1.answer.value += '7' ">
           <input class="btn" type="button" value="8" onclick="form1.answer.value += '8' ">
           <input class="btn" type="button" value="9" onclick="form1.answer.value += '9' ">
-          <input class="btn" type="button" value="*" onclick="form1.answer.value += '*' ">
+          <input class="btn" type="button" value="*" onclick="form1.answer.value += '\n' + '*' + '\n' ">
         </div>
         <div class="col-12 mb-2">
-          <input class="btn" type="button" value="/" onclick="form1.answer.value += '/' ">
+          <input class="btn" type="button" value="/" onclick="form1.answer.value += '\n' + '/' + '\n' ">
           <input class="btn" type="button" value="0" onclick="form1.answer.value += '0' ">
           <input class="btn" type="button" value="." onclick="form1.answer.value += '.' ">
           <input class="btn" type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)">
