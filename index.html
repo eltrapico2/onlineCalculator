@@ -18,18 +18,24 @@
         background-color: lightgreen;
         font-weight: bold;
       }
-      #clear{
+      #clear {
         width: 212px;
+      }
+      .h2 {
+        font-size: 75px;
+        font-weight: bolder;
+        font-size:larger;
+        
       }
     </style>
   </head>
 
   <body>
     <!--Start of the Navigation-->
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-          <div>
+          <div class="text-center">
             <a class="navbar-brand ms-3 fw-bold h1" href="index.html"><img src="myAvatar.jpg" class="d-inline-block rounded-circle me-2" style="width: 40px">Himu.ko</a>
           </div>
         </div>
@@ -38,41 +44,46 @@
     <!--End of the Navigation/Header-->
 
     <center>
+      <div class="mt-3 pt-3">
+        <h2 class="text-success"><--onlineCalculator--></h2>
+      </div>
+      
       <div>
-      <form class="row row-cols-4 g-1 mt-5 pt-5 justify-content-center" id="form1">
-        <div class="row-cols-4 justify-content-end h-50">
-          <textarea class="fw-bold rounded-2 px-2 text-end align-text-bottom input-group-text" style="width: 212px; height: 120px"; type="text" name="answer" id="answer"></textarea>
-        </div>
-        
-        <div class="col-12">
-          <input class="btn" type="button" value="1" onclick="form1.answer.value += '1' ">
-          <input class="btn" type="button" value="2" onclick="form1.answer.value += '2' ">
-          <input class="btn" type="button" value="3" onclick="form1.answer.value += '3' ">
-          <input class="btn" type="button" value="+" onclick="form1.answer.value += '\n' + '+' + '\n'">
-        </div>
-        <div class="col-12">
-          <input class="btn" type="button" value="4" onclick="form1.answer.value += '4' ">
-          <input class="btn" type="button" value="5" onclick="form1.answer.value += '5' ">
-          <input class="btn" type="button" value="6" onclick="form1.answer.value += '6' ">
-          <input class="btn" type="button" value="-" onclick="form1.answer.value += '\n' + '-' + '\n' ">
-        </div>
-        <div class="col-12">
-          <input class="btn" type="button" value="7" onclick="form1.answer.value += '7' ">
-          <input class="btn" type="button" value="8" onclick="form1.answer.value += '8' ">
-          <input class="btn" type="button" value="9" onclick="form1.answer.value += '9' ">
-          <input class="btn" type="button" value="*" onclick="form1.answer.value += '\n' + '*' + '\n' ">
-        </div>
-        <div class="col-12 mb-2">
-          <input class="btn" type="button" value="/" onclick="form1.answer.value += '\n' + '/' + '\n' ">
-          <input class="btn" type="button" value="0" onclick="form1.answer.value += '0' ">
-          <input class="btn" type="button" value="." onclick="form1.answer.value += '.' ">
-          <input class="btn" type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)">
-        </div>
-        <br>
-        <div class="col-12">
-          <input class="btn" id="clear" type="button" value="Clear" onclick="form1.answer.value = ''">
-        </div>
-      </form>
+        <form class="row row-cols-4 g-1 pt-3 justify-content-center h-50" id="form1">
+          <!--div class="row-cols-4 justify-content-end "-->
+            <textarea class="fw-bold rounded-2 px-2 text-end align-text-bottom input-group-text" style="width: 212px; height: 120px"; type="text" name="answer" id="answer"></textarea>
+          <!--/div-->
+          
+          <div class="col-12">
+            <input class="btn" type="button" value="1" onclick="form1.answer.value += '1' ">
+            <input class="btn" type="button" value="2" onclick="form1.answer.value += '2' ">
+            <input class="btn" type="button" value="3" onclick="form1.answer.value += '3' ">
+            <input class="btn" type="button" value="+" onclick="form1.answer.value += '\n' + '+' + '\n'">
+          </div>
+          <div class="col-12">
+            <input class="btn" type="button" value="4" onclick="form1.answer.value += '4' ">
+            <input class="btn" type="button" value="5" onclick="form1.answer.value += '5' ">
+            <input class="btn" type="button" value="6" onclick="form1.answer.value += '6' ">
+            <input class="btn" type="button" value="-" onclick="form1.answer.value += '\n' + '-' + '\n' ">
+          </div>
+          <div class="col-12">
+            <input class="btn" type="button" value="7" onclick="form1.answer.value += '7' ">
+            <input class="btn" type="button" value="8" onclick="form1.answer.value += '8' ">
+            <input class="btn" type="button" value="9" onclick="form1.answer.value += '9' ">
+            <input class="btn" type="button" value="*" onclick="form1.answer.value += '\n' + '*' + '\n' ">
+          </div>
+          <div class="col-12 mb-2">
+            <input class="btn" type="button" value="/" onclick="form1.answer.value += '\n' + '/' + '\n' ">
+            <input class="btn" type="button" value="0" onclick="form1.answer.value += '0' ">
+            <input class="btn" type="button" value="." onclick="form1.answer.value += '.' ">
+            <input class="btn" type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)">
+          </div>
+          <br>
+          <div class="col-12">
+            <input class="btn" id="clear" type="button" value="Clear" onclick="form1.answer.value = ''">
+          </div>
+        </form>
+      </div>
     </div>
     </center>
   </body>
